@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f5e8ba;
+}
+h3{
+    font-size: 2rem;
+    text-align: center;
+    color: crimson;
+}
+.game
+{
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(4,120px);
+    grid-row-gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+#gameboard div{
+    height: 150px;
+    width: 80px;
+    border:2px solid rgb(151, 151, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: brown;
+    background-color: #e5e5f7;
+}
+.cardback
+{
+    background-color: #e5e5f7;
+    opacity:0.8;
+    background-image: linear-gradient(135deg,#444 25%, transparent 25%, transparent 50%, #444 50%, #444 75%, transparent 75%, transparent);
+    background-position: 10px 0,10px 0,0 0,0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+}
+#gameboard div:hover
+{
+    cursor: pointer;
+}
+.won{
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+    color: blue;
+    width: 500px;
+    margin: 0px auto;
+}
